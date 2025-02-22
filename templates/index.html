@@ -7,7 +7,10 @@
 </head>
 <body>
     <div class="container">
-        <h1>Network Scanner</h1>
+        <div class="header">
+            <h1>Network Scanner</h1>
+            <a href="{{ url_for('logout') }}" class="logout">Logout</a>
+        </div>
         <form method="POST">
             <label for="network_range">Network Range:</label>
             <input type="text" id="network_range" name="network_range" value="192.168.0.0/24">
