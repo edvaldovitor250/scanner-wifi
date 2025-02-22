@@ -3,10 +3,9 @@ from scanner.network_scanner import NetworkScanner
 from functools import wraps
 
 app = Flask(__name__)
-app.secret_key = "minha_chave_secreta"
 
 USERNAME = "admin"
-PASSWORD = "senha123"
+PASSWORD = "1234"
 
 def login_required(f):
     @wraps(f)
