@@ -3,6 +3,7 @@ from scanner.network_scanner import NetworkScanner
 from functools import wraps
 
 app = Flask(__name__)
+app.secret_key = "n3Q,0157}<-"
 
 USERNAME = "admin"
 PASSWORD = "1234"
